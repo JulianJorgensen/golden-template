@@ -2,7 +2,7 @@ var fs          = require('fs');
 var yaml        = require('js-yaml');
 
 function loadConfig() {
-  var ymlFile = fs.readFileSync('gulp/config.yml', 'utf8');
+  var ymlFile = fs.readFileSync('_config-gulp.yml', 'utf8');
   return yaml.load(ymlFile);
 }
 
